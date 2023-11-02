@@ -1,0 +1,6436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"bd0a0cc7-c222-4c9d-b038-33d0cb0702e6",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.auth</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-11-01 09:34:13 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:17]"><span>[1.1:17]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:18]"><span>[1.2:18]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:19]"><span>[1.3:19]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:20]"><span>[1.4:20]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.5:21]"><span>[1.5:21]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.6:22]"><span>[1.6:22]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.7:23]"><span>[1.7:23]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.8:24]"><span>[1.8:24]</span> <span>Prueba de inicio de sesión incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:28]"><span>[2:28]</span> <span>Prueba de refreshToken</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:42]"><span>[3:42]</span> <span>Prueba de logout y revocado de token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/auth.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Pruebas</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:17]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2236</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1693</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1666</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1591</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5.0.call.0.12">21:33:55.774 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:33:57.056 response time in milliseconds: 1275
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:33:57 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQzNywianRpIjoiNzRlZjJmZjktNDkyYS00M2U3LWFkM2YtZmRlZjJkYzA2MzIzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQzNywiZXhwIjoxNjk4ODk0MjM3LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.Lc_3gG04cvm2pZCugN3CqTY8CNu4d0rnA65kLf_yDCo&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQzNywianRpIjoiN2Y2ZjdjNmItNDEzMy00YTZiLWEwMjktMGI1MDM0MmUyZTEzIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0MzcsImV4cCI6MTY5ODk3ODgzNywicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.Hg6aQ60LR8CHUbb4wqETyCanBhGBtHEcFRnM2bRqFuc&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;notexist&quot;, password: &quot;secret&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">538</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">21:33:57.090 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 43
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;notexist&quot;,&quot;password&quot;:&quot;secret&quot;}
+
+21:33:57.624 response time in milliseconds: 532
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:33:58 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:18]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1574</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1043</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1030</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1025</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5.0.call.0.12">21:33:57.661 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:33:58.683 response time in milliseconds: 1020
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:33:59 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQzOSwianRpIjoiODZkNDI0NzUtZmYzOC00ZjRhLWFlMDItMzBkOTFjNTc4ZDA0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQzOSwiZXhwIjoxNjk4ODk0MjM5LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.ZgJEYpTENfCPfdhrpR9yCOlBkPDQwSW1ENhHu2RSCQA&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQzOSwianRpIjoiNWFkMjEyNGEtZDI0MC00ZTJmLWFmZWUtMjQzZjI4MjZkNDg5IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0MzksImV4cCI6MTY5ODk3ODgzOSwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.5Rc4zyxTY1sGPLTNGREv4SwMkw77tAnGc0I2YofZm70&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;other&quot;, password: &quot;secret&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">529</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.11">21:33:58.692 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 40
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;other&quot;,&quot;password&quot;:&quot;secret&quot;}
+
+21:33:59.218 response time in milliseconds: 525
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:19]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1594</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1095</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="3.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1084</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1078</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5.0.call.0.12">21:33:59.243 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:00.319 response time in milliseconds: 1073
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0MSwianRpIjoiMTRhZmExZGYtZTBhNC00ZTkzLWJkYjAtOWZjY2NlM2U4NTA4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0MSwiZXhwIjoxNjk4ODk0MjQxLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.7G3ogRrWukDUauDF1xrRziaYPAo-9Fh-YXDO8iox_jE&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0MSwianRpIjoiOWM0YTlhNGYtNDFhZS00ZThkLWI1OGYtYzM5Njk1ZTA4MGUxIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDEsImV4cCI6MTY5ODk3ODg0MSwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0._UuCbuKnchl12n2Udy1RnGLW1aI4--uSmW3wqKjcG4o&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.5.0.call">
+    <div class="step-container" id="3.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;none&quot;, password: &quot;secret&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">498</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.11">21:34:00.329 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;none&quot;,&quot;password&quot;:&quot;secret&quot;}
+
+21:34:00.824 response time in milliseconds: 494
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:20]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2043</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1006</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="4.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">996</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">990</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.5.0.call.0.12">21:34:00.846 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:01.834 response time in milliseconds: 986
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0MiwianRpIjoiZjM1M2U3OGUtNzFhMy00Yzk5LTg2M2QtODMzYTA0MTAwZjA5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0MiwiZXhwIjoxNjk4ODk0MjQyLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.HrpW_CuSw--kyWkxqb01bHJm_huSUChvE-v4LkepCAQ&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0MiwianRpIjoiOGZiNmQ4NDYtYzQ0My00ZjYyLTlmMzQtMjIwMzU2NGRmOGJlIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDIsImV4cCI6MTY5ODk3ODg0Miwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.9S_PuT7_YU0Cr1Mu81UvF27joMf2gJmy66GfQj5_hdI&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="4.5.0.call">
+    <div class="step-container" id="4.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;invalid&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1035</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.11">21:34:01.845 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;invalid&quot;}
+
+21:34:02.877 response time in milliseconds: 1030
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:21]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2035</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.5:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.5:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1015</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="5.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1006</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1003</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.5.0.call.0.12">21:34:02.902 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:03.902 response time in milliseconds: 999
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0NCwianRpIjoiNzMzZjhkYjQtMjE2YS00Mzc2LTgwYjgtM2U0N2QwNmIyN2NmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0NCwiZXhwIjoxNjk4ODk0MjQ0LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.FyoBdHaKkX8M5ZpGMNIJLOd2_LTfOFX2zikQ1yJkBzE&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0NCwianRpIjoiOTQ0ZWJjODctZDA5OC00MDMzLWIwNDUtZGZkOTQ4MmM4NmQ3IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDQsImV4cCI6MTY5ODk3ODg0NCwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.5SIg0sCoOZnJI2cZB_ifZnukvLmMsS7zYx4REAcb6OM&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="5.5.0.call">
+    <div class="step-container" id="5.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;emily&quot;, password: &quot;invalid&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1019</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.11">21:34:03.907 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;emily&quot;,&quot;password&quot;:&quot;invalid&quot;}
+
+21:34:04.924 response time in milliseconds: 1015
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.6:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.6:22]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1526</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.6:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.6:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.6:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1019</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="6.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1012</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1009</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.5.0.call.0.12">21:34:04.941 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:05.949 response time in milliseconds: 1007
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:06 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0NiwianRpIjoiYTczYzAzNjAtOTM1Yy00Yjk4LTk4ZDMtNjE3NDZmMmVmMjg5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0NiwiZXhwIjoxNjk4ODk0MjQ2LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.6LFkQDq5969wGzDw9CTJmNn5MXYd6k0iUYsFZmvGMCw&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0NiwianRpIjoiMDZiODI0M2UtZjRkMC00YWNlLThmODYtODZjNjE3MjMxMGY2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDYsImV4cCI6MTY5ODk3ODg0Niwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.VTlVgpuJK0UwEK2uSgUtZGvK9CO-YWAGNLtaVJaaTcg&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="6.5.0.call">
+    <div class="step-container" id="6.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;user&quot;, password: &quot;&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">506</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.11">21:34:05.954 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 33
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;user&quot;,&quot;password&quot;:&quot;&quot;}
+
+21:34:06.458 response time in milliseconds: 503
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:07 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.7:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.7:23]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1634</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.7:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.7:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.7:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1126</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="7.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1119</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1116</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.5.0.call.0.12">21:34:06.474 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:07.588 response time in milliseconds: 1112
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0OCwianRpIjoiNjViZWRhMzctZjI1ZS00NGQwLTg5YmEtYmJhNjk0NGRjMTUwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0OCwiZXhwIjoxNjk4ODk0MjQ4LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.Wv-JTeD4esBhE2PA2x7sLFvstEp-cMLrbCA7lChbwyE&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0OCwianRpIjoiZDc3NWVhM2UtNDMwNS00NzFlLTg3ZjYtMjA1MzZiYjE0OWYzIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDgsImV4cCI6MTY5ODk3ODg0OCwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.L51k-6519bYS6B1QyGDr89s9lVrqCYilP5acwKatETQ&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="7.5.0.call">
+    <div class="step-container" id="7.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;&quot;, password: &quot;pass&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">508</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.11">21:34:07.593 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 33
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;pass&quot;}
+
+21:34:08.099 response time in milliseconds: 504
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.8:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.8:24]</span>
+                <span class="scenario-name">Prueba de inicio de sesión incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1629</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.8:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.8:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.8:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1123</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="8.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1117</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.5.0.call.0.12">21:34:08.115 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:09.228 response time in milliseconds: 1111
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0OSwianRpIjoiOTUyY2YzOTMtMWY5OC00MzIwLWI3NGUtN2ZmZDJiMjcyMWIzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ0OSwiZXhwIjoxNjk4ODk0MjQ5LCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.U-PTy_2wPnN4vIq0zZr-qkMOG-Lr6zdeP4oK1zbHcZI&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ0OSwianRpIjoiMGRiMTBiY2YtOTBjZi00ZjFmLTkwZGYtMzdhZDczNGQ0MzM3IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NDksImV4cCI6MTY5ODk3ODg0OSwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.fdnKEcpB-hEK9G1mSbQdJPlHnQ6Z2C7Ts-lBXzIwkwA&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="8.5.0.call">
+    <div class="step-container" id="8.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;&quot;, password: &quot;&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">503</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.11">21:34:09.233 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 29
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;}
+
+21:34:09.735 response time in milliseconds: 500
+1 &lt; 401
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 65
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+{
+  &quot;code&quot;: 401,
+  &quot;message&quot;: &quot;Usuario o clave inv\u00e1lidos&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { code: 401, message: &quot;Usuario o clave inválidos&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:28]</span>
+                <span class="scenario-name">Prueba de refreshToken</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2044</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1022</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1015</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1012</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.12">21:34:09.753 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:10.763 response time in milliseconds: 1009
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:11 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MSwianRpIjoiNWQzMDFhOGQtOTExNy00YTJkLWE1NjYtZDk3MzllZDA2ODViIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MSwiZXhwIjoxNjk4ODk0MjUxLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.JrB7a36Ewf8jrCOHaepD8Rc2NeOd58E1ePYibZiYafA&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MSwianRpIjoiMDNhODdkNzctZmQ0NC00NTYyLWI1NGUtYTVkYzRiYTA4ZTJiIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NTEsImV4cCI6MTY5ODk3ODg1MSwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.KoMcOrdTHhlB3N_X9GOPmaJQ4qaFFBKxFPuBIMpt0bQ&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/refresh&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">496</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">21:34:10.783 request:
+1 &gt; POST https://smart-risk.tech/api/v1/refresh
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MSwianRpIjoiMDNhODdkNzctZmQ0NC00NTYyLWI1NGUtYTVkYzRiYTA4ZTJiIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NTEsImV4cCI6MTY5ODk3ODg1MSwicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.KoMcOrdTHhlB3N_X9GOPmaJQ4qaFFBKxFPuBIMpt0bQ
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:34:11.277 response time in milliseconds: 493
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 483
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MiwianRpIjoiNzhhMGVkNzgtZTI0MC00OGQ2LThlNTYtOWE3MzgxMzFiNTg4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MiwiZXhwIjoxNjk4ODk0MjUyLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.T5H2D59rbBdYesfr7tJ0xOVSFb81-XoAcwq6NuTrMOE&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">508</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">21:34:11.281 request:
+2 &gt; POST https://smart-risk.tech/api/v1/logout
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MiwianRpIjoiNzhhMGVkNzgtZTI0MC00OGQ2LThlNTYtOWE3MzgxMzFiNTg4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MiwiZXhwIjoxNjk4ODk0MjUyLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.T5H2D59rbBdYesfr7tJ0xOVSFb81-XoAcwq6NuTrMOE
+2 &gt; Host: smart-risk.tech
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+21:34:11.788 response time in milliseconds: 504
+2 &lt; 204
+2 &lt; Server: nginx/1.24.0
+2 &lt; Date: Thu, 02 Nov 2023 02:34:12 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Connection: keep-alive
+2 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Referrer-Policy: same-origin
+2 &lt; Access-Control-Allow-Origin: http://localhost:3000
+2 &lt; Access-Control-Expose-Headers: Content-Type
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; Vary: Origin
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:42]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:42]</span>
+                <span class="scenario-name">Prueba de logout y revocado de token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2029</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:42]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1018</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.login</div>
+      </div>
+      <div class="time-cell passed">1014</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://smart-risk.tech&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &quot;jaider&quot;, password: &quot;654321&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1011</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.12">21:34:11.800 request:
+1 &gt; POST https://smart-risk.tech/api/v1/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jaider&quot;,&quot;password&quot;:&quot;654321&quot;}
+
+21:34:12.810 response time in milliseconds: 1008
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:13 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 965
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+{
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MywianRpIjoiN2Y1NjZlZjYtNTk4My00NWM0LTk1ZjUtYmFkYjkwNmExMDk5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MywiZXhwIjoxNjk4ODk0MjUzLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.i9AufpfYLDomOFYbeEy73P005o9GinJ_NJ7YxHTFW_A&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MywianRpIjoiZWZhN2Y3NzUtMzU0Yi00ZTk3LTk5NWQtNmNkNmU2MzRlYTMxIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJqYWlkZXIiLCJuYmYiOjE2OTg4OTI0NTMsImV4cCI6MTY5ODk3ODg1Mywicm9sZXMiOlsiQURNSU4iXSwidXNlciI6eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiamFpZGVyIiwiZW1haWwiOiJqYWlkZXJAZ21haWwuY29tIiwicm9sZXMiOlt7Im5hbWUiOiJBZG1pbmlzdHJhZG9yIiwiaWRlbnRpZmllciI6IkFETUlOIn1dfX0.AUx_5iY4GW23uWZNobO52z3_nTgXkXCVahc_sN4tyi4&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accessToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.refreshToken != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def refreshToken = response.refreshToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">522</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">21:34:12.815 request:
+1 &gt; POST https://smart-risk.tech/api/v1/logout
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MywianRpIjoiN2Y1NjZlZjYtNTk4My00NWM0LTk1ZjUtYmFkYjkwNmExMDk5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MywiZXhwIjoxNjk4ODk0MjUzLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.i9AufpfYLDomOFYbeEy73P005o9GinJ_NJ7YxHTFW_A
+1 &gt; Host: smart-risk.tech
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:34:13.335 response time in milliseconds: 519
+1 &lt; 204
+1 &lt; Server: nginx/1.24.0
+1 &lt; Date: Thu, 02 Nov 2023 02:34:14 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Referrer-Policy: same-origin
+1 &lt; Access-Control-Allow-Origin: http://localhost:3000
+1 &lt; Access-Control-Expose-Headers: Content-Type
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">486</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50">21:34:13.339 request:
+2 &gt; POST https://smart-risk.tech/api/v1/logout
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODg5MjQ1MywianRpIjoiN2Y1NjZlZjYtNTk4My00NWM0LTk1ZjUtYmFkYjkwNmExMDk5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImphaWRlciIsIm5iZiI6MTY5ODg5MjQ1MywiZXhwIjoxNjk4ODk0MjUzLCJyb2xlcyI6WyJBRE1JTiJdLCJ1c2VyIjp7InVzZXJJZCI6MSwidXNlcm5hbWUiOiJqYWlkZXIiLCJlbWFpbCI6ImphaWRlckBnbWFpbC5jb20iLCJyb2xlcyI6W3sibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJpZGVudGlmaWVyIjoiQURNSU4ifV19fQ.i9AufpfYLDomOFYbeEy73P005o9GinJ_NJ7YxHTFW_A
+2 &gt; Host: smart-risk.tech
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+21:34:13.823 response time in milliseconds: 481
+2 &lt; 401
+2 &lt; Server: nginx/1.24.0
+2 &lt; Date: Thu, 02 Nov 2023 02:34:14 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Content-Length: 38
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: http://localhost:3000
+2 &lt; Access-Control-Expose-Headers: Content-Type
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; Vary: Origin
+2 &lt; Content-Security-Policy: default-src &#39;self&#39;; connect-src &#39;self&#39; https://smart-risk.tech http://localhost:5000; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com https://fonts.gstatic.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; img-src &#39;self&#39; data:
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Referrer-Policy: same-origin
+{
+  &quot;msg&quot;: &quot;Token has been revoked&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.msg == &quot;Token has been revoked&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
